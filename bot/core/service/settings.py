@@ -70,4 +70,4 @@ class Settings:
         return list(roles)
 
     def get_developer(self):
-        return self._load_config().get("dev").get("developer")
+        return self._load_config().get("dev").get("support")
