@@ -12,9 +12,9 @@ from bot.core.service.database import Database
 from bot.util.discord import set_nickname
 from bot.util.rolemanager import update_roles
 
-class Ranker:
+class Ranker(commands.Cog):
     def __init__(self, client):
-        super().__init__(client)
+        super().__init__()
         self._member_access = Member()
 
     # COMMANDS ---------------------------------------------------------------------------------------------------------
