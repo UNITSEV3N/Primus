@@ -1,0 +1,4 @@
+python-dotenv==1.2.1
+discord.py==2.6.4
+typing-extensions==4.15.0
+mysql-connector-python==26.7.0

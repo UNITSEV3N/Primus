@@ -1,0 +1,21 @@
+{
+  "configuration":
+  {
+    "status":   "online",
+    "activity": "Not really a Titan!"
+  },
+
+  "cogs":
+  {
+    "core":
+    [
+      "debugger",
+      "ranker"
+    ]
+  },
+
+  "dev":
+  {
+    "developer": "DEV_ID"
+  }
+}

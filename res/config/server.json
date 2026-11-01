@@ -1,0 +1,25 @@
+{
+  "commands":
+  {
+    "authentication":
+    {
+      "screen": [],
+      "enlist": []
+    }
+  },
+
+  "roles":
+  {
+    "platforms":
+    {
+      "PC":           0,
+      "Xbox":         0,
+      "PlayStation":  0
+    },
+    "default":
+    {
+      "screen":       [],
+      "enlisted":     []
+    }
+  }
+}
