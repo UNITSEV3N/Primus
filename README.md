@@ -87,7 +87,12 @@ Latimer is a Discord bot build under the Project Primius. This repository contai
    ```
    Fill in your Discord bot token and MySQL credentials.
 
-4. **Run the bot**
+4. **Configure the environment**
+   ```
+   Configure server.json and config.json files
+   ```
+
+5. **Run the bot**
    ```bash
    python -m bot
    ```
