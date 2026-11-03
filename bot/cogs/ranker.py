@@ -55,8 +55,6 @@ class Ranker(commands.Cog):
 
         if not await self.has_authorisation(ctx):
             return None
-        
-        Database.check()
 
         # _member = ctx.guild.get_member(int(member))
 
@@ -73,7 +71,7 @@ class Ranker(commands.Cog):
         _member = ctx.guild.get_member(int(member))
 
         message = discord.Embed(
-            title="SCREEN"
+            title="RENAME"
         )
 
         success = await asyncio.to_thread(self._member_access.update_name, _member.id, new_name)

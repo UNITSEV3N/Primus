@@ -190,3 +190,5 @@ cython_debug/
 
 # Development
 dev.env
+res/config/config.json
+res/config/server.json

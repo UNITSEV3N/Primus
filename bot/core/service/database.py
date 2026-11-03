@@ -35,15 +35,3 @@ class Database:
             raise
         finally:
             conn.close()
-            
-    @classmethod
-    def check(cls):
-        with cls.get_connection() as conn:
-            cursor = conn.cursor()
-        try:
-            cursor.execute("SELECT 1")
-            cursor.fetchone()
-        finally:
-            cursor.close()
-            
-    
