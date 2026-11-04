@@ -25,7 +25,7 @@ async def update_roles(ctx: discord.Interaction, member: discord.Member, add: li
         method = member.add_roles
         reason = f"Added {len(add)} roles"
 
-    elif remove:
+    if remove:
         action = "remove"
         roles = await validate_roles(ctx.guild, remove)
         method = member.remove_roles

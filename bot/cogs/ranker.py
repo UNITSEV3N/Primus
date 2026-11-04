@@ -9,7 +9,7 @@ from bot import ASSET_ROOT
 from bot.core.exception import MemberExists, AuthorizationError
 from bot.core.service.access.member import Member
 from bot.core.service.database import Database
-from bot.util.discord import set_nickname
+from bot.util.nickname import set_nickname
 from bot.util.rolemanager import update_roles
 
 class Ranker(commands.Cog):
