@@ -68,6 +68,10 @@ class Ranker(commands.Cog):
     @app_commands.command(name="rename", description=f"This is a description")
     async def _rename(self, ctx: discord.Interaction, member: str, new_name: str):
         await ctx.response.defer(ephemeral=True)
+        
+        if not await self.has_authorisation(ctx):
+            return None
+        
         _member = ctx.guild.get_member(int(member))
 
         message = discord.Embed(
